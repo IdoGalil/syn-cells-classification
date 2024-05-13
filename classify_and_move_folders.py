@@ -22,7 +22,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description='Process and classify images using neural network models.')
     parser.add_argument('--source-folders', type=str, required=True, help='Directory containing the image folders and data files')
     parser.add_argument('--output-folder', type=str, required=True, help='Directory to save outputs')
-    parser.add_argument('--fast-model-path', type=str, default='path_to_fast_model.pt', help='Path to the fast model')
+    parser.add_argument('--fast-model-path', type=str, default='./model_checkpoints/tf_efficientnetv2_b0.in1k.pt', help='Path to the fast model')
     parser.add_argument('--ensemble-path', type=str, default='path_to_ensemble_model', help='Path to the ensemble model')
     parser.add_argument('--use-ensemble', action='store_true', help='Flag to use the ensemble model instead of the fast model')
     parser.add_argument('--sort-images', action='store_true', help='Flag to sort images when using the fast model')
