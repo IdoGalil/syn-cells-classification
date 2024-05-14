@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 ## Classifying Images
 
-To allow ensemble classification, download and prepare the model checkpoints:
+To allow ensemble classification, download and prepare the model checkpoints (ensemble model checkpoints are available under "releases"):
 
 ```bash
 unzip ensemble_p1.zip -d ./model_checkpoints/ensemble
@@ -47,7 +47,7 @@ python classify_and_move_folders.py --source-folders <path-to-input-folder> --ou
 
 ## Training the Model
 
-First, prepare the training dataset:
+First, prepare the training dataset (the training dataset is available under "releases"):
 
 ```bash
 unzip training_dataset.zip -d ./training_dataset
